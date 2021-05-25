@@ -4,11 +4,7 @@
   display: flex;
   flex-direction: column;
   overflow: auto;
-  height: 75vh;
-
-  @media (min-width: 768px) {
-    height: 94%;
-  }
+  height: 80vh;
 }
 
 .profile {
@@ -35,8 +31,8 @@
 }
 
 .users {
-  height: 42vh;
   overflow-y: auto;
+  flex: 4;
 
   .person {
     position: relative;

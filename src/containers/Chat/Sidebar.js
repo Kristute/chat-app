@@ -18,7 +18,7 @@ export default function Sidebar({ users, activeUser, changeUser, addNewChat, loa
     <div className="col-3 col-md-4">
       <div className="users-container">
         <UserMenu />
-        <ListGroup className="users">
+        <ListGroup className="users flex-grow-4">
           {users.map((user) => (
             <UserListItem
               active={activeUser.id === user.id}
