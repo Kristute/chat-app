@@ -1,0 +1,142 @@
+$setting-footer-height: rem(40);
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100%;
+  background-color: $setting-color-main;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.centered {
+  position: absolute;
+  top: 51%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 79vh;
+  overflow: auto;
+
+  @media (min-width: 768px) {
+    height: auto;
+  }
+}
+
+.content {
+  padding: rem(20) 0;
+  min-height: 89vh;
+}
+
+.header {
+  background: $setting-color-gray-3;
+}
+
+.footer {
+  height: $setting-footer-height;
+  background: $setting-color-gray-3;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.logo {
+  svg {
+    width: rem(30);
+    height: rem(30);
+    padding-right: rem(5);
+  }
+}
+
+.btn-sec {
+  background-color: $setting-color-sec;
+  border-color: $setting-color-sec;
+
+  &:hover {
+    background-color: $setting-color-sec-hover;
+    border-color: $setting-color-sec-hover;
+  }
+
+  &:disabled {
+    background-color: $setting-color-gray-2;
+    border-color: $setting-color-gray-2;
+
+    &:hover {
+      background-color: $setting-color-gray-2;
+      border-color: $setting-color-gray-2;
+    }
+  }
+}
+
+.btn-mob {
+  width: 100%;
+
+  @media (min-width: 768px) {
+    width: auto;
+  }
+}
+
+.bg-main {
+  background-color: $setting-color-main;
+}
+
+.bg-alt {
+  background-color: $setting-color-alt;
+  border-color: $setting-color-alt;
+
+  &:hover {
+    background-color: $setting-color-alt-hover;
+    border-color: $setting-color-alt-hover;
+  }
+}
+
+.logout-wrapper {
+  width: 100%;
+  margin: rem(10) 0;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    width: auto;
+    margin: 0;
+  }
+}
+
+.logout {
+  width: rem(20);
+  height: rem(20);
+}
+
+.chat-avatar {
+  width: rem(39);
+  height: rem(39);
+  border-radius: rem(50);
+
+  @media (min-width: 768px) {
+    width: rem(48);
+    height: rem(48);
+  }
+}
+
+.account-image {
+  width: rem(100);
+  height: rem(100);
+
+  @media (min-width: 768px) {
+    width: rem(150);
+    height: rem(150);
+  }
+}
+
+.chat {
+  max-height: 80vh;
+}

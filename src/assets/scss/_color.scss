@@ -1,0 +1,25 @@
+$setting-color-main: #101326;
+$setting-color-alt: #29c0cd;
+$setting-color-sec: #e34578;
+
+$setting-color-alt-hover: #22a1ac;
+$setting-color-sec-hover: #bd1c50;
+
+$setting-color-white: #fff;
+$setting-color-black: #000;
+$setting-color-transparent: rgba($setting-color-white, 0);
+
+$setting-color-warning: #fdbe36;
+$setting-color-success: #28a745;
+$setting-color-alert: #fe0009;
+
+$setting-color-gray-1: #f7f7f7;
+$setting-color-gray-2: #999999;
+$setting-color-gray-3: #e6ecf3;
+$setting-color-gray-4: #f4f5fb;
+
+$setting-color-actions: (
+  success: $setting-color-success,
+  warning: $setting-color-warning,
+  alert: $setting-color-alert,
+);
